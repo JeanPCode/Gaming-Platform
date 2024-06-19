@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+	background-image: url("../assets/img-games/fondo.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.la-vieja{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.281);
+    border: 3px solid #000;
+    width: 260px;
+    height: 344px;
+}
+
+#title{
+    font-size: 40px;
+    color: white;
+    filter: drop-shadow(
+        0 0 10px rgba(0, 0, 0, .8)
+    ) ;
+}
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.game-info p {
+    margin: 5px;
+    font-size: 1.4em;
+}
+
+.game-info p span{
+    font-size: 1.1em;
+    color: #000;
+}
+
+.options .bn31 {
+    background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+    border-radius: 40px;
+    color: #00a84f;
+    height: 50px;
+    font-size: 1.4em;
+    padding: 4px;
+    width: 7em;
+}
+  
+.options .bn31:hover {
+    color: #fff;
+}
+  
+.options .bn31 .bn31span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4c4c50;
+    border-radius: 40px;
+    height: 100%;
+    transition: background 0.5s ease;
+    width: 100%;
+}
+  
+.options .bn31:hover .bn31span {
+    background: transparent;
+}
+
+.cuadro {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 10px;
+    border: 2px solid #000;
+    padding: 10px;
+    backdrop-filter: blur(40px);
+    background-color: rgba(255, 255, 255, 0.10);
+}
+
+.celda {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    background-color: rgba(255, 255, 255, 0.281);
+}
+
+.celda:hover {
+    background-color: #e0e0e0;
+}
+
+.x {
+    color: black;
+}
+
+.o {
+    color: black;
+}
+
+.winner {
+    background-color: #b0e0b0;
+}
