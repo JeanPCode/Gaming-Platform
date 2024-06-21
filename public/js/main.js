@@ -1,5 +1,4 @@
 /*Esta parte era de menu.js*/
-
 (function(){
     const openButton = document.querySelector('.nav__menu');
     const menu = document.querySelector('.nav__link');
@@ -39,7 +38,6 @@
 
 /*Esta parte era de slider.js*/
 (function(){
-    
     const sliders = [...document.querySelectorAll('.testimony__body')];
     const buttonNext = document.querySelector('#next');
     const buttonBefore = document.querySelector('#before');
@@ -65,7 +63,5 @@
         }
 
         sliders[value-1].classList.add('testimony__body--show');
-
     }
-
 })();

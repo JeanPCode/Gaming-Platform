@@ -189,10 +189,12 @@ body {
 
 .price{
     text-align: center;
+    padding-bottom: 30xp;
 }
 
 .price__table{
     padding-top: 60px;
+    padding-bottom: 60px;
     display: flex;
     flex-wrap: wrap;
     gap: 2.5em;
@@ -200,40 +202,71 @@ body {
     align-items: center;
 }
 
+.price__element:hover{
+    transform: scale(1.1);
+}
+
 .price__element{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
     background-color: #3b63b2;
     text-align: center;
     border-radius: 10px;
     width: 330px;
-    padding: 40px;
+    height: 460px;
+    padding: 60px 30px;
     --color-plan: #171524;
     --color-price: #02142e;
     --bg-cta: #28989e;
     --color-cta: #0e0e15;
     --color-items: #080808;
+    background-image: url(../assets/home-page/la.vieja.images.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .price__element--best{
-    width: 370px;
-    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 330px;
+    height: 460px;
+    padding: 60px 30px;
     background-color: #000000;
     --color-plan: rgb(255 255 255 / 75%);
     --color-price: #fff;
     --bg-cta: #31084b;
     --color-cta: #FFF;
     --color-items: #fff;
+    background-image: url(../assets/home-page/ruleta.images.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.price__element--second{
+    background-image: url(../assets/home-page/tragaperras.images.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
 .price__name{
-    color: var(--color-plan);
-    margin-bottom: 15px;
+    color: white;
+    text-shadow: 0 0 10px #1ad9d9;  
+    margin-bottom: 13px;
     font-weight: 300;
 }
 
 .price__price{
     font-size: 2rem;
-    color: var(--color-price);
+    color: white;
+    text-shadow: 0 0 10px #1ad9d9;  
 }
 
 .price__items{
@@ -243,19 +276,56 @@ body {
     font-weight: 300;
     font-size: 1.2rem;
     margin-bottom: 50px;
-    color: var(--color-items);
+    color: white;
+    text-shadow: 0 0 10px #1ad9d9;  
+}
+
+.bottom-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .price__cta{
-    display: block;
-    padding: 20px 0;
-    border-radius: 10px;
     text-decoration: none;
-    background-color: var(--bg-cta);
+    width: 160px;
+    font-size: 16px;
     font-weight: 600;
-    color: var(--color-cta);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
 }
+
+.price__cta:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.price__cta:focus {
+  outline: none;
+}
+
+.price__cta.bn20{
+    background-image: linear-gradient(
+      to right,
+      #667eea,
+      #764ba2,
+      #6b8dd6,
+      #8e37d7
+    );
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+  }
 
 .testimony{
     background-color: #613474;
