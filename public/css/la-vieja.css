@@ -11,78 +11,65 @@ body {
 	background-size: cover;
 }
 
-.la-vieja{
+.div-la-vieja{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    background-color: rgba(180, 34, 238, 0.3);
+    backdrop-filter: blur(10px);
 }
 
-.options{
+.options-lavieja{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     background-color: rgba(255, 255, 255, 0.281);
-    border: 3px solid #000;
+    border: 5px solid rgba(165, 7, 228, 0.719);
     width: 260px;
     height: 344px;
 }
 
 #title{
     font-size: 40px;
-    color: white;
+    color: black;
     filter: drop-shadow(
         0 0 10px rgba(0, 0, 0, .8)
     ) ;
+    border-bottom: solid 2px rgba(165, 7, 228, 0.719);
 }
 
-.game-info {
+.vieja-info {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: black;
     margin-bottom: 30px;
 }
 
-.game-info p {
+.vieja-info p {
     margin: 5px;
     font-size: 1.4em;
 }
 
-.game-info p span{
+.vieja-info p span{
     font-size: 1.1em;
     color: #000;
 }
 
-.options .bn31 {
-    background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
-    border-radius: 40px;
-    color: #00a84f;
-    height: 50px;
-    font-size: 1.4em;
-    padding: 4px;
-    width: 7em;
-}
-  
-.options .bn31:hover {
-    color: #fff;
-}
-  
-.options .bn31 .bn31span {
+.bn62 {
+    color: #1cc49d;
+    background-color: #1b2f31;
+    border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #4c4c50;
-    border-radius: 40px;
-    height: 100%;
-    transition: background 0.5s ease;
-    width: 100%;
-}
-  
-.options .bn31:hover .bn31span {
-    background: transparent;
+    height: 3em;
+    width: 8em;
+    font-size: large;
+    font-weight: 600;
 }
 
 .cuadro {
@@ -90,7 +77,7 @@ body {
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
     grid-gap: 10px;
-    border: 2px solid #000;
+    border: 2px solid rgba(165, 7, 228, 0.719);
     padding: 10px;
     backdrop-filter: blur(40px);
     background-color: rgba(255, 255, 255, 0.10);
