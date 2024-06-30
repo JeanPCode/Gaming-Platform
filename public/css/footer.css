@@ -92,6 +92,11 @@ footer {
     text-shadow: none
 }
 
+.linkedin span:hover{
+    color: #0A66C2;
+    text-shadow: none
+}
+
 .icon span{
     transition:circle-in-center 0.4s;
 }

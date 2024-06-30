@@ -502,8 +502,6 @@ main{
     font-size: 1em;
 }
 
-
-
 @media (max-width:800px){
     .nav-home-menu{
         display: block;
