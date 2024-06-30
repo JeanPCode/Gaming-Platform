@@ -1,4 +1,4 @@
-/*Funcion para menu interactivo*/
+/*Funcion para Menu Interactivo*/
 (function(){
     const openButton = document.querySelector('.nav-home-menu');
     const menu = document.querySelector('.nav-home-options');
@@ -13,7 +13,7 @@
     });
 })();
 
-/*Funcion para carrusel de testimonios*/
+/*Funcion para Testimonios*/
 (function(){
     const sliders = [...document.querySelectorAll('.body-view')];
     const buttonNext = document.querySelector('#view-next');
@@ -43,25 +43,18 @@
     }
 })();
 
-/*Funcion para dropdown de preguntas*/
-(function(){
-    const titleQuestions = [...document.querySelectorAll('.tittle-questions')];
-    console.log(titleQuestions)
+/*Funcion para Seccion de Preguntas*/
+this.addEventListener("DOMContentLoaded", () =>{
+    const questions = document.querySelectorAll(".question")
+    questions.forEach((question) => question.addEventListener("click", () =>{
+  
+        if(question.parentNode.classList.contains("active")){
+            question.parentNode.classList.toggle("active")
+        }
+    else{
+    questions.forEach(question => question.parentNode.classList.remove("active"))
+    question.parentNode.classList.add("active")
+        }
 
-    titleQuestions.forEach(question =>{
-        question.addEventListener('click', ()=>{
-            let height = 0;
-            let answer = question.nextElementSibling;
-            let addPadding = question.parentElement.parentElement;
-
-            addPadding.classList.toggle('question--add');
-            question.children[0].classList.toggle('arrow-questions--rotate');
-
-            if(answer.clientHeight === 0){
-                height = answer.scrollHeight;
-            }
-
-            answer.style.height = `${height}px`;
-        });
-    });
-})();
+    }))
+}) 

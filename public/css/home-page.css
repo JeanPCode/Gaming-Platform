@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poetsen+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+@import url('//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 @import url(./buttons.css);
+@import url(./footer.css);
 
 * {
     box-sizing: border-box;
@@ -78,6 +80,21 @@ header::before {
 
 .nav__items{
     list-style: none;
+    transition: transform 0.5s;
+}
+
+.nav__items a{
+    transition: text-stroke 0.5s;
+}
+
+.nav__items:hover{
+    transform: scale(1.2);
+}
+
+.nav__items a:hover{
+    color: #FFFFFF;
+    -webkit-text-stroke: 0.5px #8549BC;
+    text-stroke: 0.5px #8549BC;
 }
 
 .nav-home-items{
@@ -385,11 +402,23 @@ main{
     object-position: 50% 30%;
 }
 
+
+
 .section-questions{
     display: flex;
     flex-direction: column;
     width: 100%;
     padding-inline: 60px;
+}
+
+.div-questions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-inline: 40px;
+    gap: 20px;
 }
 
 .tittle-question{
@@ -413,74 +442,48 @@ main{
     font-size: 1em;
 }
 
-.div-questions{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    gap: 2em;
-}
-
-.question{
-    transition: padding 0.3s;
+.question-answer {
+    padding-inline: 40px;
+    width: 100%;
     border: 2px solid #7644F7;
     border-radius: 6px;
-    padding: 5px 0;
 }
 
-.question-add{
-    padding-bottom: 50px;
-}
-
-.answer-questions{
-    padding: 0 30px 0;
-    overflow: hidden;
-}
-
-.arrow-questions{
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
+.question {
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    align-self: flex-end;
-    transition:  transform .3s;
-}
-
-.arrow-questions--rotate{
-    padding-top: 20px;
-    transform: rotate(180deg);
-}
-
-.tittle-questions{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    padding-top: 20px;
-    padding-inline: 10px 10px;
+    justify-content: space-between;
     cursor: pointer;
-    color: black;
+    transition: 0.4s;
+}
+
+.question h3 {
     font-size: 1.2em;
+    color: black;
+    margin: 1.4rem 0rem;
 }
 
-.text-question{
-    text-align: center;
-    font-size: 1em;
-    transition: height 0.3s;
+.question svg{
+    align-self: center;
+    color: #7644F7;
+    width: 40px;
+    height: 40px;
 }
 
-.arrow-questions--rotate .text-question{
-    align-content: flex-start;
-    align-items: center;
+.active svg{
+  transform: rotate(180deg);
+  transition: all 0.3s ease-in;
+
 }
 
-.img-questions{
+.question-answer > .answer {
+    display: none;
+}
+  
+.active > .answer {
     display: block;
+    padding-bottom: 1.3rem;
 }
+
 
 .last-questions{
     padding: 40px 60px;
@@ -499,128 +502,7 @@ main{
     font-size: 1em;
 }
 
-footer{
-    width: 100%;
-    background-color: #7644F7;
-}
 
-.div-footer-home{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    color: white;
-    gap: 20px;
-    padding: 20px 0;
-}
-
-.picture-footer-home{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 240px;
-    padding: 5px;
-}
-
-
-
-.picture-footer-home img{
-    width: 150px;
-}
-
-.container-home-footer{
-    max-width: 1200px;
-    width: 720px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.container-home-footer h2{
-    text-align: center;
-    font-size: 2em;
-}
-
-.nav-home-footer{
-    display: flex;
-    justify-content: stretch;
-    flex-direction: column;
-    padding-inline: 20px;
-}
-
-.list-footer-home{
-    list-style: none;
-}
-
-.items-footer-home a{
-    text-decoration: none;
-    color: white;
-    font-size: 1.2em;
-}
-
-.items-footer-home span i{
-    color: white;
-    font-size: 1.2em;
-}
-
-.footer-home-social{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.footer-home-social .icon span i{
-    font-size: 40px;
-}
-
-.footer-home-social .icon span{
-    text-shadow: 2px 2px black;
-}
-
-.footer-home-social .icon span i.fa-github:hover{
-    color: black;
-}
-
-.footer-home-social .icon span i.fa-facebook-f:hover{
-    color: #0F83F0;
-}
-
-.footer-home-social .icon span i.fa-instagram:hover{
-    color: #8549BC;
-}
-
-.footer-home-social .icon span i.fa-youtube:hover{
-    color: #FF0808
-}
-
-.copyright-footer{
-    padding-inline: 20px;
-    color: white;
-    font-size: 1em;
-}
-
-.title-home-social h3{
-    color: white;
-    font-size: 1.6em;
-    text-align: center;
-}
-
-.icons-home-social{
-    gap: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.copyright-footer h3{
-    border-top: 1px solid white;
-    width: 100%;
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 20px;
-}
 
 @media (max-width:800px){
     .nav-home-menu{
@@ -698,22 +580,8 @@ footer{
         height: 200px;
         
     }
-    .div-footer-home{
-        flex-wrap: wrap;
-    }
-
-    .nav-home-footer{
-        width: 100%;
-        justify-items: center;
-    }
-
-    .nav__link--footer{
-        width: 100%;
-        justify-content: space-evenly;
-        margin: 0;
-    }
-
 }
+
 @media (max-width:600px){
     .banner-home-title{
         font-size: 2rem;
@@ -746,10 +614,5 @@ footer{
 
     .title-questions{
         font-size: 1rem;
-    }
-
-    .nav-home-footer h2{
-        justify-self: start;
-        margin-bottom: 15px;
     }
 }
