@@ -284,10 +284,10 @@ function checkMatrixEquality(mat1, mat2) {
 
 function gameOver(status) { 
 	if (status === "Win") { 
-		result.innerText = "You Won!!!"; 
+		result.innerText = "Ganaste!!!"; 
 		result.style.color = "rgb(78, 236, 144)"; 
 	} else { 
-		result.innerText = "You Loose!!!"; 
+		result.innerText = "Sigue Intentando!!!"; 
 		result.style.color = "rgb(252, 51, 51)"; 
 	} 
 } 
