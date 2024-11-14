@@ -2,10 +2,256 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home-Page</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/home-page.css">
+    <title>JX4 GAMES</title>
 </head>
 <body>
+    <header>
+        <nav class="nav-home">
+            <div class="nav-home-logo">
+                <h2>JX4 GAMES</h2>
+            </div>
+            <ul class="nav-home-options nav-home-options--menu">
+                <li class="nav__items">
+                    <a href="./index.html" class="nav-home-items">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="./nosotros.html" class="nav-home-items">Conocenos</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#questions" class="nav-home-items">Preguntas</a>
+                </li>
+                <li class="nav__items">
+                    <a href="./login.html" class="nav-home-items">Acceder</a>
+                </li>
+                <img src="./assets/icons/exit.svg" class="nav-home-close">
+            </ul>
+            <div class="nav-home-menu">
+                <img src="./assets/icons/menu.svg" class="nav-home-menu-icon">
+            </div>
+        </nav>
+        <section class="banner-home">
+            <h1 class="banner-home-title">Disfruta de cada entretenido espacio que traemos para ti con tan solo un click.</h1>
+            <p class="banner-home-paragraph">Escoge pasarla bien y obtener grandes ganancias.</p>
+            <a href="./login.html" class="home-button btn-home">Comienza ahora</a>
+        </section>
+    </header>
+
+    <main>
+        <section class="section-about">
+            <div class="about-tittle">
+                <h2>¿Qué tenemos para ti?</h2>
+                <p>Todo lo necesario para pasar un rato agradable (Ruleta Loca, La Vieja,
+                    el Tragaperras y mucho más)</p>
+            </div>
+            <div class="about-div">
+                <article class="about-div-icon">
+                    <img src="./assets/icons/ruleta.svg" class="about-icon">
+                    <h3>Ruleta Loca</h3>
+                    <p> Divertete juegando con tus probalidaddes y el azar</p>
+                </article>
+                <article class="about-div-icon">
+                    <img src="./assets/icons/luck.svg" class="about-icon">
+                    <h3>Tragaperras</h3>
+                    <p>Juego clasico de maquina, el Fav. de muchos</p>
+                </article>
+                <article class="about-div-icon">
+                    <img src="./assets/icons/game.svg" class="about-icon">
+                    <h3>La Vieja</h3>
+                    <p>Juego desafiante donde usaras tu logica para ganar.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-trophies">
+            <div class="div-trophies">
+                <div class="paragraph-trophies">
+                    <h2>JX4 GAMES </h2>
+                    <p> Plataforma de entretenimiento. ¡Supera los retos y obten gran ganancia!</p>
+                    <a href="./login.html" class="home-button btn-home">GAME SIDE</a>
+                </div>
+                <figure class="picture-trophies">
+                    <img src="./assets/PremiosGmaer.jpg" class="picture-trophies">
+                </figure>
+            </div>
+        </section>
+
+        <section class="section-games">
+            <h2>Entra en cada uno de nuestros Games y Diviertete</h2>
+            <div class="div-games">
+                <div class="card-games la-vieja">
+                    <p class="text-game">GAME</p>
+                    <div class="paragraph-games">
+                        <h3>LA VIEJA</h3>
+                        <p>Practica y Gana</p>
+                    </div>
+                    <div class="button-games">
+                        <a href="./games/la-vieja.html" class="btn-games btn1">Empieza ahora</a>
+                    </div>
+                </div>
+                <div class="card-games ruleta">
+                    <p class="text-game">GAME</p>
+                    <div class="paragraph-games">
+                        <h3>RULETA LOCA</h3>
+                        <p>Gana Premios</p>
+                    </div>
+                    <div class="button-games">
+                        <a href="./login.html" class="btn-games btn1">Juega ahora</a>
+                    </div>
+                </div>
+                <div class="card-games tragaperras">
+                    <p class="text-game">GAME</p>
+                    <div class="paragraph-games">
+                        <h3>TRAGAPERRAS</h3>
+                        <p>Tu Mejor opción</p>
+                    </div>
+                    <div class="button-games">
+                        <a href="./login.html" class="btn-games btn1">Juega ahora</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-view">
+            <div class="div-view">
+                <img src="./assets/icons/leftarrow.svg" class="arrow-view" id="view-before">
+
+                <section class="body-view body-view--show" data-id="1">
+                    <div class="testimony-view">
+                        <h2>Soy Pablito Vergara,</h2>
+                        <span>Gamer frenetico.</span>
+                        <p>Quiero decir que este es el mejor centro de juegos que he probado, dandolas posibilidades de poder obtener la victoria mediante mi estrategia y mi suerte.</p>
+                    </div>
+                    <figure class="picture-view">
+                        <img src="./assets/home-page/Pablito.jpg" class="img-view">
+                    </figure>
+                </section>
+
+                <section class="body-view" data-id="2">
+                    <div class="testimony-view">
+                        <h2>Soy Juan Alias el Maracucho,</h2>
+                        <span>Apostador noob.</span>
+                        <p>Esta pagina es mejor que la nuestra, vos viste? que mollejaaaa</p>
+                    </div>
+                    <figure class="picture-view">
+                        <img src="./assets/home-page/Maracucho.jpg" class="img-view">
+                    </figure>
+                </section>
+
+                <section class="body-view" data-id="3">
+                    <div class="testimony-view">
+                        <h2>Soy Pedro,</h2>
+                        <span>Apostador noob.</span>
+                        <p>Esta pagina es mejor que la nuestra, vos viste? que mollejaaaa</p>
+                    </div>
+                    <figure class="picture-view">
+                        <img src="./assets/home-page/Maracucho.jpg" class="img-view">
+                    </figure>
+                </section>
+                
+                <section class="body-view" data-id="4">
+                    <div class="testimony-view">
+                        <h2>Soy Thomas,</h2>
+                        <span>Apostador noob.</span>
+                        <p>Esta pagina es mejor que la nuestra, vos viste? que mollejaaaa</p>
+                    </div>
+                    <figure class="picture-view">
+                        <img src="./assets/home-page/Maracucho.jpg" class="img-view">
+                    </figure>
+                </section>
+
+                <img src="./assets/icons/rightarrow.svg" class="arrow-view" id="view-next">
+            </div>
+
+        </section>
+
+        <section class="section-questions" id="questions"> 
+            <div class="tittle-question">
+                <h2>Preguntas frecuentes</h2>
+                <p>Aqui encontrarás respuestas a las dudas más comunes que puedan surgir al usar nuestra plataforma. Esperamos que esta información te sea útil para que puedas disfrutar al máximo de tu experiencia en 4XJ GAMES.</p>
+            </div>
+            <section class="div-questions">
+
+                <div class="question-answer">
+                    <div class="question">
+                        <h3>¿Qué tipo de juegos ofrece su plataforma?</h3>
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M8 11L12 15M12 15L16 11M12 15V3M7 4.51555C4.58803 6.13007 3 8.87958 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 8.87958 19.412 6.13007 17 4.51555" stroke="#7644F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    </div>
+                    <div class="answer">
+                        <p>En JX4 GAMES encontrarás una amplia variedad de juegos para todos los gustos. Tenemos desde clásicos juegos, hasta emocionantes juegos de casino, para aquellos que buscan probar suerte y divertirse con apuestas.</p>
+                    </div>
+                </div>
     
+                <div class="question-answer">
+                    <div class="question">
+                        <h3>¿Qué dispositivos son compatibles con su plataforma?</h3>
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M8 11L12 15M12 15L16 11M12 15V3M7 4.51555C4.58803 6.13007 3 8.87958 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 8.87958 19.412 6.13007 17 4.51555" stroke="#7644F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    </div>
+                    <div class="answer">
+                        <p>Puedes disfrutar de nuestros juegos desde cualquier dispositivo con navegaodr web. Somos compatibles con ordenadores, tablets y smartphones, por lo que podrás jugar donde quieras y cuando quieras.</p>
+                    </div>
+                </div>
+    
+                <div class="question-answer">
+                    <div class="question">
+                        <h3>¿Hay opciones de ganar premios  o recompensas en los juegos?</h3>
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M8 11L12 15M12 15L16 11M12 15V3M7 4.51555C4.58803 6.13007 3 8.87958 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 8.87958 19.412 6.13007 17 4.51555" stroke="#7644F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    </div>
+                    <div class="answer">
+                        <p>Sí, ofrecemos una gran variedad de juegos gratuitos para que puedas probar nuestra plataforma y divertirte sin gastar dinero. También contamos con una amplia selección de juegos de apuesta, para aquellos que buscan emoción y la posibilidad de ganar premios.</p>
+                    </div>
+                </div>
+    
+            </section>  
+
+            <section class="last-questions">
+                <h2>¿Estas listo para jugar?</h2>
+                <p>Comienza probando las diversas fuentes de entretenimiento que traemos para ti.</p>
+                <a href="./login.html" class="home-button btn-home">Diviertete ¡YA!</a>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-icon">
+                <h1>JX4 GAMES</h1>
+                <img src="./assets/favicon.png" class="img-footer">
+            </div>
+            <div class="options-footer">
+              <div class="footer-option">
+                <h2>HOME PAGE</h2>
+                <a href="./index.html" class="footer-a">Inicio</a>
+                <a href="./nosotros.html" class="footer-a">Conocenos</a>
+                <a href="#" class="footer-a">Preguntas</a>
+                <a href="#" class="footer-a">Contacto</a>
+              </div>
+              <div class="footer-option">
+                <h2>SIGUENOS EN:</h2>
+                <a href="#" class="icon github">
+                    <span><i class="fab fa-github"></i> GitHub</span>
+                </a>
+                <a href="#" class="icon facebook"> 
+                    <span><i class="fab fa-facebook-f"></i> Facebook</span>
+                </a>
+                <a href="#" class="icon instagram"> 
+                    <span><i class="fab fa-instagram"></i> Instagram</span>
+                </a>
+                <a href="#" class="icon youtube"> 
+                    <span><i class="fab fa-youtube"></i> YouTube</span>
+                </a>
+              </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="legal">
+                <span> © 2024 All rights reserved by Grupo 4J </span>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/home.js"></script>
 </body>
 </html>

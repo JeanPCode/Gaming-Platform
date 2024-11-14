@@ -1,0 +1,5 @@
+# node_modules
+node_modules/
+
+# archivo de configuración de Firebase
+casino-base-de-datos--casino-firebase-adminsdk-qn3dr-9f9b33c56f.json

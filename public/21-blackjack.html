@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/blackjack.css">
+    <title>Jx4 Games - Blackjack (21)</title>
+</head>
+<body>
+	<header class="nav-main">
+        <div class="user-data">
+            <span class="data-tokens"><p id="tokens">1000</p><p>$</p></span>
+            <p id="user-main">Jean Vergara</p>
+        </div>
+        <div class="option-menu">
+            <ul>
+                <li><a href="./main.html">Menu</a></li>
+                <li><a href="./main.html">Volver</a></li>
+            </ul>
+        </div>
+    </header>
+	<main>
+        <div class="container">
+            <div class="row">
+              <div class="col s12" id="welcome">
+                  <h1>Blackjack - 21</h1>
+                  <p>Prepárate para poner a prueba tu suerte y haz tu apuesta a continuación</p>
+                  <div id="wager-options">
+                      <a href="#" id="chip-10"><img src="img/10-chip.png" class="wager wager-clickable"></a>
+                      <a href="#" id="chip-25"><img src="img/25-chip.png" class="wager wager-clickable"></a>
+                      <a href="#" id="chip-50"><img src="img/50-chip.png" class="wager wager-clickable"></a>
+                      <a href="#" id="chip-100"><img src="img/100-chip.png" class="wager wager-clickable"></a>
+                      <br>
+                      <span class="current-wager">0</span>
+                      <img src="img/pile-chip.png" class="wager-small">
+                      <span class="current-chip-balance">500</span>
+                      <br>
+                      <button id="start-game-button">Jugar</button>
+                  </div>	
+              </div>
+          </div>
+      </div>
+      <div class="container inactive" id="game-board">
+          <div class="row">
+              <div class="col m8 s12">
+                  <h4>Dealer</h4>
+                  <div id="deck-pile" class="hide-on-small-only">
+                      <img src="img/card_back.png" class="card pile">
+                  </div>
+                  <div id="dealer"></div>
+                  <span class="dealer-hand-total game-board-totals"></span>
+              </div>
+              <div class="col s12 m4">
+                  <div class="row">
+                      <div class="col s5 m6 offset-s1 wager-gameplay">
+                          <img src="img/blank-chip.png" class="wager">
+                          <span class="current-wager">___</span>
+                      </div>
+                      <div class="col s5 m6 wager-gameplay">
+                          <img src="img/pile-chip.png" class="wager">
+                          <span class="current-chip-balance">___</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+                <div class="col s12 m8">
+                    <h4>Player</h4>
+                        <div id="user-hand"></div>
+                        <span class="hand-total game-board-totals">0</span>
+                        <div id="user-split-hand" class="inactive"></div>
+                        <span class="split-hand-total game-board-totals inactive">0</span>
+              </div>
+              <div class="col s12 m4" id="sidebar">
+                  <div class="row">
+                      <div class="col m6 s3">
+                          <button id="hit-button">Tomar</button>
+                      </div>
+                      <div class="col m6 s3">
+                          <button id="double-down-button" class="secondary">Doblar Apuesta</button>
+                      </div>
+                      <div class="col m6 s3">
+                          <button id="stand-button" class="secondary">Quedarse</button>
+                      </div>
+                      <div class="col m6 s3">
+                          <button class="disabled-button split-button" class="secondary">Dividir</button>
+                      </div>
+                  </div>
+               </div>
+          </div>
+      </div>
+      <div class="container">
+          <div class="row">
+              <div class="col s12 inactive" id="game-over">
+                  <h3 id="game-outcome">El Ganador es:</h3>
+                  <table>
+                    <tr>
+                      <td class="total-label"><h5>Dealer</h5></td>
+                      <td class="total-output"><span class="dealer-hand-total"></span></td> 
+                  </tr>
+                  <tr>
+                      <td class="total-label"><h5>Jugador</h5></td>
+                      <td class="total-output"><span class="hand-total"></span> <span class="split-hand-total inactive"></span></td>
+                  </tr>
+                  </table>
+                  <button class="new-game-button">Repetir</button>
+              </div>
+            </div>
+      </div>
+	</main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="./js/blackjack.js"></script>
+    <script type="text/javascript" src="./js/cards.js"></script>
+	<script type="text/javascript" src="./js/game-play-logic.js"></script>
+	<script type="text/javascript" src="./js/game-win-logic.js"></script>
+	<script type="text/javascript" src="./js/button-actions.js"></script>
+</body>
+</html>

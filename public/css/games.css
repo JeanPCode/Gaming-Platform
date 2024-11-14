@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/img-main/fondo-main.jpg');
+    background-repeat: round;
+    background-size: cover;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    padding-inline: 80px;
+    width: 100%;
+    height: auto;
+    color: white;
+    gap: 20px;
+}
+
+.menu-games{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 50px;
+    background-color: rgba(180, 34, 238, 0.3);
+    backdrop-filter: blur(10px);
+    gap: 40px;
+    border-radius: 20px;
+}
+
+.section-games{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.final-section{
+    padding-bottom: 30px;
+}
+
+.description-games{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.title-games{
+    font-family: "Libre Franklin", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: black;
+    text-shadow: 0 0 10px #931ad9;
+    font-size: 3em;  
+}
+
+.title-games:hover{
+    color: white;
+}
+
+.options-games{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.card-game{
+    padding: 20px;
+    border-radius: 15px;
+    border: solid 2px black;
+    height: 380px;
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.5s; 
+}
+
+.card-game:hover{
+    transform: scale(1.1);
+}
+
+.name-game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0 0 10px #1a8dd9;
+    font-size: 2em;  
+}
+
+.card-game p{
+    display: flex;
+    text-align: justify;
+}
+
+.card-game .bottom-game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 160px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    cursor: pointer;
+    padding: 10px;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.card-game .bottom-game:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.card-game .bottom-game:focus {
+  outline: none;
+}
+
+.card-game .bottom-game.bn20{
+    background-image: linear-gradient(
+      to right,
+      #667eea,
+      #764ba2,
+      #6b8dd6,
+      #8e37d7
+    );
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+
+.la-vieja{
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../assets/img-main/la.vieja.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.game-numeros{
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../assets/img-main/2048.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tragaperras1{
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../assets/img-main/tragaperras1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tragaperras2{
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../assets/img-main/tragaperras2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tragaperras3{
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../assets/img-main/tragaperras3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tragaperras4{
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../assets/img-main/tragaperras4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tragaperras5{
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../assets/img-main/tragaperras5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.memoria{
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../assets/img-main/memoria.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ruleta{
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../assets/img-main/ruleta.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blackjack{
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../assets/img-main/blackjack.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
